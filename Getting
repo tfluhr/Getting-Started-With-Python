@@ -1,0 +1,543 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This is some explanatory text.  This course has been designed for people with no programming experience. We hope to blah blah."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Let's execute our first program.  We're going to use Python's built-in `print()` function. To execute a code block, select the block and click the 'Run' button above or use the `Shift + Enter` keyboard combination."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "print(\"Hello World!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "In the program above we pass a string (`str`) argument to python's `print()` function. Python includes many [built-in functions](https://docs.python.org/3/library/functions.html).\n",
+    "\n",
+    "###### Exercise:\n",
+    "  1.  Use the print function to display your own message."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "See, programming is easy!  But we'll need to do more than print text strings if we want to be good programmers.  Let's discuss a few important concepts."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Variables\n",
+    "---------------\n",
+    "Variables are containers for stroring data values.\n",
+    "They consist of `name` and a `value`.  All value data has a data type."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "\n",
+    "Data Types\n",
+    "--------------------\n",
+    "Python has [many data types](https://www.w3schools.com/python/python_datatypes.asp), but for today's workshop we will focus on only a few."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Text Type\n",
+    "`str` - Strings are sets of characters enclosed in quotes."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Numeric Type\n",
+    "`int` - Integers are positive or negative whole numbers.\n",
+    "`float` - Floating point are real numbers with a decimal point."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Exercise:\n",
+    "  1. Run all the code blocks below.\n",
+    "  2. Identify the name, value and type the variables below.\n",
+    "  3. Create a variable containing your name.  Make sure to run the code after you've created the variable."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "var1 = \"blah blah blah 1234\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "var2 = 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "radius = 5.5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "pi = \"3.14159\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name = \"SuperDave\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Discussion:\n",
+    "Can anyone identify the name, value and type of one of the variables for the class?  What happened when you ran the code blocks?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Excersise:\n",
+    "  1. Use your name variable and the print function to print your name."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Functions\n",
+    "----------------\n",
+    "A function is a block of code which only runs when it is called."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "###### Functions can contain no arguments, just instructions."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def my_greeting():\n",
+    "    print(\"Howdy!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "###### Functions can  require arguments."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def my_hello(name):\n",
+    "  print(\"My name is \" + name + \".\" )"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "###### Functions can also provide default arguments in case one is not provided."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def my_workshop(msg = \"horrible!\"):\n",
+    "    print(\"Getting Started With Python is \" + msg)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "###### Calling a function\n",
+    "We called the print function earlier. Remember, to call a function, use the function name followed by parenthesis.\n",
+    "\n",
+    "###### Excercise:\n",
+    "   1.  Call each of the functions above.  "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Discussion:\n",
+    "Did anyone have any trouble calling the functions?  Did anything strange happen?  Other observations?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Functions can call other functions.  Let's take a look at an example. Run the code blocks below."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import datetime"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def print_date():\n",
+    "    print(datetime.datetime.now())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print_date()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Discussion\n",
+    "Any questions about what is going on here? Comments? Thoughts?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    " ##### Excercise:\n",
+    "   1. Create your own function using using `my_greeting`, `my_hello`, and `my_workshop` to print a message like:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Howdy!\n",
+    "\n",
+    "My name is Tim!\n",
+    "\n",
+    "Getting Started With Python is sort of fun!"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "###### Hint\n",
+    "First define your new function, then run it."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_statement()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "###### hint\n",
+    "see code below if you're having trouble."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def my_statement():\n",
+    "    msg = \"fun!\"\n",
+    "    my_greeting()\n",
+    "    my_hello(name)\n",
+    "    my_workshop(msg)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Operators\n",
+    "------------\n",
+    "Operators are used to perform operations on variables and values.\n",
+    "\n",
+    "Python contains 7 [types of operators](https://www.w3schools.com/python/python_operators.asp), but today we'll focus on just a few."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Arithmetic\n",
+    "Arithmetic operators are used with numeric values to perform common mathematical operations.  The set of arithmetic operators includes addition `+`, subtraction `-`, multiplication `*`, division `\\` and a few others."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Assignement\n",
+    "Assignment operators are used to assign values to variables.  There is a large set of assignment operators, but today we'll only talk about the `=` operator which we've already used to assign values to variables above."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Comparison\n",
+    "Comparison operators are used to compare two values and include equal `==`, not equal `!=`, greater than and less than, `>` `<`, and greater/less than or equal to `>=` `<=`."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Exercise:\n",
+    "  1. Use some of our defined variables to play around with the arithmetic and comparison operators\n",
+    "  2. Find the area of a circle using the pi and radius variables.\n",
+    "  ##### hint:\n",
+    "  The area of a circle is π(r^2) and python's power operator is `**`."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Discussion\n",
+    "What happened?  Did you notice anything intersting?  How were data types relevant when using operators?\n",
+    "\n",
+    "##### Hint\n",
+    "try using the `type` function to find an item's datatype."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "type(pi)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Excersise: \n",
+    "  1. Create a function to calculate the area of a circle.\n",
+    "  2. Print the area of a circle with a label."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##### Hint\n",
+    "See code below if you're having difficulties."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def area_circle(radius):\n",
+    "    print(\"The area of the circle is: \" +  str(3.1459*(radius**2)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "area_circle(5.5)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
